@@ -23,8 +23,6 @@ client.on('message', async msg => {
         msg.reply('pong');
     }
 
-    // console.log(text)
-
     // #ask/question?
     if (text.includes("#ask/")) {
         await ChatAIHandler(text, msg);

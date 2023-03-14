@@ -50,8 +50,6 @@ const ChatGPTRequest = async (text) => {
 
      if(response.status === 200) {
       const { choices } = response.data
-      // console.log(response)
-      // console.log(choices)
 
       if(choices && choices.length){
          result.isSucces = true;

@@ -63,12 +63,10 @@ const ChatGPTRequest = async (text) => {
      }
 
    })
-   .catch(() => {
-
+   .catch((Error) => {
+    result.message = 'Error: ' + error.message;
+    return result;
    })
-
-
-
 }
 
 module.exports = {
